@@ -20,3 +20,7 @@ https://github.com/DiceOwl/StableDiffusionStuff/blob/main/loopback_superimpose.p
   out=config/auto/scripts/loopback_superimpose.py
 https://github.com/memes-forever/Stable-diffusion-webui-video/blob/main/videos.py?raw=True
   out=config/auto/scripts/videos.py
+https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_openpose-fp16.safetensors
+  out=ControlNet/control_openpose-fp16.safetensors
+https://huggingface.co/webui/ControlNet-modules-safetensors/raw/main/cldm_v15.yaml
+  out=ControlNet/control_openpose-fp16.yml
