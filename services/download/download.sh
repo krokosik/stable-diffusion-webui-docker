@@ -10,9 +10,11 @@ echo "Downloading, this might take a while..."
 aria2c -x 10 --disable-ipv6 --input-file /docker/links.txt --dir /data --continue
 
 cd /data/config/auto/extensions
+set +e
 while read line; do
 git clone $line
 done < /docker/extensions.txt
+set -Eeuo pipefail
 
 echo "Checking SHAs..."
 
