@@ -24,3 +24,11 @@ https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control
   out=ControlNet/control_openpose-fp16.safetensors
 https://huggingface.co/webui/ControlNet-modules-safetensors/raw/main/cldm_v15.yaml
   out=ControlNet/control_openpose-fp16.yml
+https://huggingface.co/webui/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned-fp16.safetensors
+  out=StableDiffusion/v2-1_768-ema-pruned-fp16.safetensors
+https://huggingface.co/webui/stable-diffusion-2-1/raw/main/v2-1_768-ema-pruned-fp16.yaml
+  out=StableDiffusion/v2-1_768-ema-pruned-fp16.yaml
+https://huggingface.co/webui/AltDiffusion-m9/resolve/main/Alt-Diffusion-M9-fp16.safetensors
+  out=StableDiffusion/Alt-Diffusion-M9-fp16.safetensors
+https://huggingface.co/webui/AltDiffusion-m9/blob/main/Alt-Diffusion-M9-fp16.yaml
+  out=StableDiffusion/Alt-Diffusion-M9-fp16.yaml
