@@ -1,0 +1,1 @@
+https://github.com/deforum-art/deforum-for-automatic1111-webui deforum

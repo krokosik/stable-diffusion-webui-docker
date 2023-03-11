@@ -62,4 +62,10 @@ if [ -f "/data/config/auto/startup.sh" ]; then
   popd
 fi
 
+# Deforum extension seems to be a bit broken in Docker, fix from https://github.com/AbdBarho/stable-diffusion-webui-docker/issues/308#issuecomment-1402757749
+if [ -f ./extensions/deforum/requirements.txt ]; then
+  pip install -r ./extensions/deforum/requirements.txt
+  pip install -U opencv-python-headless 'transformers>=4.24'
+fi
+
 exec "$@"
