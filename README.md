@@ -10,6 +10,10 @@ Visit the wiki for [Setup](https://github.com/AbdBarho/stable-diffusion-webui-do
 
 This repository provides multiple UIs for you to play around with stable diffusion:
 
+### [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+
+WIP
+
 ### [AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 [Full feature list here](https://github.com/AUTOMATIC1111/stable-diffusion-webui-feature-showcase), Screenshots:

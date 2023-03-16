@@ -39,6 +39,14 @@ services:
     environment:
       - CLI_ARGS=--no-half --precision full --allow-code --enable-insecure-extension-access --api
 
+  comfy:
+    <<: *base_service
+    profiles: ["comfy"]
+    build: ./services/comfyUI
+    image: sd-comfy:1
+    environment:
+      - CLI_ARGS=
+
   invoke:
     <<: *base_service
     profiles: ["invoke"]
