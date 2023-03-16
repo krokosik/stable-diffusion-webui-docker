@@ -68,4 +68,7 @@ for f in ./extensions/*/requirements.txt; do
   pip install -r $f
 done
 
+mkdir -p extensions/deforum/models
+ln -t extensions/deforum/models models/ControlNet/*
+
 exec "$@"
