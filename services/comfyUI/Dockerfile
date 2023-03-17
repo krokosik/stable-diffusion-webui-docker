@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND=noninteractive PIP_PREFER_BINARY=1
 
 RUN PIP_NO_CACHE_DIR=1 pip install torch==1.13.1 torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
 
-RUN apt-get update && apt install git -y && apt-get clean
+RUN apt-get update && apt install fonts-dejavu-core rsync git jq moreutils ffmpeg -y && apt-get clean
 
 RUN --mount=type=cache,target=/root/.cache/pip <<EOF
 git clone https://github.com/comfyanonymous/ComfyUI
@@ -43,4 +43,4 @@ WORKDIR ${ROOT}
 ENV CLI_ARGS=""
 EXPOSE 7860
 ENTRYPOINT ["/docker/entrypoint.sh"]
-CMD python -u main.py --port 7860 ${CLI_ARGS}
+CMD python -u main.py --listen --port 7860 ${CLI_ARGS}
