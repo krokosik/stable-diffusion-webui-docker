@@ -1,4 +1,2 @@
-https://github.com/deforum-art/deforum-for-automatic1111-webui deforum
 https://github.com/AlUlkesh/stable-diffusion-webui-images-browser
 https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator
-https://github.com/Mikubill/sd-webui-controlnet

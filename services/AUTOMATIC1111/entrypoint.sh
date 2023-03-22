@@ -63,11 +63,6 @@ if [ -f "/data/config/auto/startup.sh" ]; then
   popd
 fi
 
-# Extension seem to be a bit broken in Docker, fix from https://github.com/AbdBarho/stable-diffusion-webui-docker/issues/308#issuecomment-1402757749
-for f in ./extensions/*/requirements.txt; do
-  pip install -r $f
-done
-
-ln -sfn models/ControlNet/ extensions/deforum/models
+ln -sfn models/ControlNet/ repositories/deforum/models
 
 exec "$@"

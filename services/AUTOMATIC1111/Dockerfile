@@ -23,6 +23,9 @@ RUN . /clone.sh BLIP https://github.com/salesforce/BLIP.git 48211a1594f1321b00f1
 RUN . /clone.sh k-diffusion https://github.com/crowsonkb/k-diffusion.git 5b3af030dd83e0297272d861c19477735d0317ec
 RUN . /clone.sh clip-interrogator https://github.com/pharmapsychotic/clip-interrogator 2486589f24165c8e3b303f84e9dbbea318df83e8
 
+RUN . /clone.sh deforum https://github.com/deforum-art/deforum-for-automatic1111-webui 6b75aa59e7c52d7c5c3c880ba09c0b00c853c9c9
+RUN . /clone.sh sd-webui-controlnet https://github.com/Mikubill/sd-webui-controlnet 2f0e67329d4090b5eab452908285c6b4ab508547
+
 
 FROM alpine:3.17 as xformers
 RUN apk add --no-cache aria2
@@ -55,8 +58,11 @@ ENV ROOT=/stable-diffusion-webui
 
 COPY --from=download /git/ ${ROOT}
 RUN mkdir ${ROOT}/interrogate && cp ${ROOT}/repositories/clip-interrogator/data/* ${ROOT}/interrogate
-RUN --mount=type=cache,target=/root/.cache/pip \
-  pip install -r ${ROOT}/repositories/CodeFormer/requirements.txt
+RUN --mount=type=cache,target=/root/.cache/pip <<EOF
+pip install -r ${ROOT}/repositories/CodeFormer/requirements.txt
+pip install -r ${ROOT}/repositories/sd-webui-controlnet/requirements.txt
+pip install -r ${ROOT}/repositories/deforum/requirements.txt
+EOF
 
 RUN --mount=type=cache,target=/root/.cache/pip \
   pip install pyngrok \
@@ -77,6 +83,8 @@ cd stable-diffusion-webui
 git fetch
 git reset --hard ${SHA}
 pip install -r requirements_versions.txt
+cp -rf ${ROOT}/repositories/deforum/ extensions
+cp -rf ${ROOT}/repositories/sd-webui-controlnet/ extensions
 EOF
 
 RUN --mount=type=cache,target=/root/.cache/pip  pip install -U opencv-python-headless
