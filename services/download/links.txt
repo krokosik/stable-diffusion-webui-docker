@@ -26,7 +26,7 @@ https://huggingface.co/webui/stable-diffusion-2-1/raw/main/v2-1_768-ema-pruned-f
   out=StableDiffusion/v2-1_768-ema-pruned-fp16.yaml
 https://huggingface.co/webui/AltDiffusion-m9/resolve/main/Alt-Diffusion-M9-fp16.safetensors
   out=StableDiffusion/Alt-Diffusion-M9-fp16.safetensors
-https://huggingface.co/webui/AltDiffusion-m9/blob/main/Alt-Diffusion-M9-fp16.yaml
+https://huggingface.co/webui/AltDiffusion-m9/raw/main/Alt-Diffusion-M9-fp16.yaml
   out=StableDiffusion/Alt-Diffusion-M9-fp16.yaml
 https://huggingface.co/thibaud/controlnet-sd21/resolve/main/canny-sd21-safe.safetensors
   out=ControlNet/canny-sd21-safe.safetensors
