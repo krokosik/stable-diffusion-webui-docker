@@ -20,10 +20,6 @@ https://github.com/DiceOwl/StableDiffusionStuff/blob/main/loopback_superimpose.p
   out=config/auto/scripts/loopback_superimpose.py
 https://github.com/memes-forever/Stable-diffusion-webui-video/blob/main/videos.py?raw=True
   out=config/auto/scripts/videos.py
-https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_openpose-fp16.safetensors
-  out=ControlNet/control_openpose-fp16.safetensors
-https://huggingface.co/webui/ControlNet-modules-safetensors/raw/main/cldm_v15.yaml
-  out=ControlNet/control_openpose-fp16.yml
 https://huggingface.co/webui/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned-fp16.safetensors
   out=StableDiffusion/v2-1_768-ema-pruned-fp16.safetensors
 https://huggingface.co/webui/stable-diffusion-2-1/raw/main/v2-1_768-ema-pruned-fp16.yaml
@@ -32,3 +28,47 @@ https://huggingface.co/webui/AltDiffusion-m9/resolve/main/Alt-Diffusion-M9-fp16.
   out=StableDiffusion/Alt-Diffusion-M9-fp16.safetensors
 https://huggingface.co/webui/AltDiffusion-m9/blob/main/Alt-Diffusion-M9-fp16.yaml
   out=StableDiffusion/Alt-Diffusion-M9-fp16.yaml
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/canny-sd21-safe.safetensors
+  out=ControlNet/canny-sd21-safe.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/blob/main/color-sd21-safe.safetensors
+  out=ControlNet/color-sd21-safe.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/blob/main/depth-sd21-safe.safetensors
+  out=ControlNet/depth-sd21-safe.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/blob/main/hed-sd21-safe.safetensors
+  out=ControlNet/hed-sd21-safe.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/blob/main/openpose-sd21-safe.safetensors
+  out=ControlNet/openpose-sd21-safe.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/blob/main/scribble-sd21-safe.safetensors
+  out=ControlNet/scribble-sd21-safe.safetensors
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/cldm_v21.yaml
+  out=ControlNet/cldm_v21.yaml
+https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_canny_sd14v1.pth
+  out=ControlNet/t2iadapter_canny_sd14v1.pth
+https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_color_sd14v1.pth
+  out=ControlNet/t2iadapter_color_sd14v1.pth
+https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_depth_sd14v1.pth
+  out=ControlNet/t2iadapter_depth_sd14v1.pth
+https://huggingface.co/TencentARC/T2I-Adapter/blob/main/models/t2iadapter_keypose_sd14v1.pth
+  out=ControlNet/t2iadapter_keypose_sd14v1.pth
+https://huggingface.co/TencentARC/T2I-Adapter/blob/main/models/t2iadapter_openpose_sd14v1.pth
+  out=ControlNet/t2iadapter_openpose_sd14v1.pth
+https://huggingface.co/TencentARC/T2I-Adapter/blob/main/models/t2iadapter_seg_sd14v1.pth
+  out=ControlNet/t2iadapter_seg_sd14v1.pth
+https://huggingface.co/TencentARC/T2I-Adapter/blob/main/models/t2iadapter_sketch_sd14v1.pth
+  out=ControlNet/t2iadapter_sketch_sd14v1.pth
+https://huggingface.co/TencentARC/T2I-Adapter/blob/main/models/t2iadapter_style_sd14v1.pth
+  out=ControlNet/t2iadapter_style_sd14v1.pth
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/image_adapter_v14.yaml
+  out=ControlNet/t2iadapter_seg_sd14v1.yaml
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/image_adapter_v14.yaml
+  out=ControlNet/t2iadapter_keypose_sd14v1.yaml
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/image_adapter_v14.yaml
+  out=ControlNet/t2iadapter_openpose_sd14v1.yaml
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/sketch_adapter_v14.yaml
+  out=ControlNet/t2iadapter_canny_sd14v1.yaml
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/sketch_adapter_v14.yaml
+  out=ControlNet/t2iadapter_sketch_sd14v1.yaml
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/t2iadapter_color_sd14v1.yaml
+  out=ControlNet/t2iadapter_color_sd14v1.yaml
+https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/t2iadapter_keypose_sd14v1.yaml
+  out=ControlNet/t2iadapter_keypose_sd14v1.yaml
