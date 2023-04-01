@@ -23,8 +23,8 @@ RUN . /clone.sh BLIP https://github.com/salesforce/BLIP.git 48211a1594f1321b00f1
 RUN . /clone.sh k-diffusion https://github.com/crowsonkb/k-diffusion.git 5b3af030dd83e0297272d861c19477735d0317ec
 RUN . /clone.sh clip-interrogator https://github.com/pharmapsychotic/clip-interrogator 2486589f24165c8e3b303f84e9dbbea318df83e8
 
-RUN . /clone.sh deforum https://github.com/deforum-art/deforum-for-automatic1111-webui 6b75aa59e7c52d7c5c3c880ba09c0b00c853c9c9
-RUN . /clone.sh sd-webui-controlnet https://github.com/Mikubill/sd-webui-controlnet 2f0e67329d4090b5eab452908285c6b4ab508547
+RUN . /clone.sh deforum https://github.com/deforum-art/deforum-for-automatic1111-webui 7e0f4b42190160ce7218a6806a4a5b06444330ff
+RUN . /clone.sh sd-webui-controlnet https://github.com/Mikubill/sd-webui-controlnet c9340671d6d59e5a79fc404f78f747f969f87374
 
 
 FROM alpine:3.17 as xformers
