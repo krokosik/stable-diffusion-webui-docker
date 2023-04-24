@@ -64,6 +64,9 @@ if [ -f "/data/config/auto/startup.sh" ]; then
   popd
 fi
 
-ln -sfn models/ControlNet/ repositories/deforum/models
+rm -rf ${ROOT}/extensions/deforum
+rm -rf ${ROOT}/extensions/sd-webui-controlnet
+cp -rf ${ROOT}/repositories/deforum/ ${ROOT}/extensions
+cp -rf ${ROOT}/repositories/sd-webui-controlnet/ ${ROOT}/extensions
 
 exec "$@"

@@ -16,7 +16,7 @@ RUN . /clone.sh k-diffusion https://github.com/crowsonkb/k-diffusion.git 5b3af03
 RUN . /clone.sh clip-interrogator https://github.com/pharmapsychotic/clip-interrogator 2486589f24165c8e3b303f84e9dbbea318df83e8
 
 RUN . /clone.sh deforum https://github.com/deforum-art/deforum-for-automatic1111-webui 8323596188af58334c112f0c8c72d07615823e60
-RUN . /clone.sh sd-webui-controlnet https://github.com/Mikubill/sd-webui-controlnet c9340671d6d59e5a79fc404f78f747f969f87374
+RUN . /clone.sh sd-webui-controlnet https://github.com/Mikubill/sd-webui-controlnet 9eeb71a796b06f912e1e66acecf4242d165db67b
 
 
 FROM alpine:3.17 as xformers
@@ -71,9 +71,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
   cd stable-diffusion-webui && \
   git fetch && \
   git reset --hard ${SHA} && \
-  pip install -r requirements_versions.txt && \
-  cp -rf ${ROOT}/repositories/deforum/ extensions && \
-  cp -rf ${ROOT}/repositories/sd-webui-controlnet/ extensions
+  pip install -r requirements_versions.txt
 
 RUN --mount=type=cache,target=/root/.cache/pip  pip install -U opencv-python-headless
 

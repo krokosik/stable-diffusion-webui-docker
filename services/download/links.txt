@@ -40,6 +40,28 @@ https://huggingface.co/thibaud/controlnet-sd21/resolve/main/openpose-sd21-safe.s
   out=ControlNet/openpose-sd21-safe.safetensors
 https://huggingface.co/thibaud/controlnet-sd21/resolve/main/scribble-sd21-safe.safetensors
   out=ControlNet/scribble-sd21-safe.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_ade20k.safetensors
+  out=ControlNet/control_v11p_sd21_ade20k.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_canny.safetensors
+  out=ControlNet/control_v11p_sd21_canny.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_color.safetensors
+  out=ControlNet/control_v11p_sd21_color.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_depth.safetensors
+  out=ControlNet/control_v11p_sd21_depth.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_hed.safetensors
+  out=ControlNet/control_v11p_sd21_hed.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_lineart.safetensors
+  out=ControlNet/control_v11p_sd21_lineart.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_normalbae.safetensors
+  out=ControlNet/control_v11p_sd21_normalbae.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_openpose.safetensors
+  out=ControlNet/control_v11p_sd21_openpose.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_openposev2.safetensors
+  out=ControlNet/control_v11p_sd21_openposev2.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_scribble.safetensors
+  out=ControlNet/control_v11p_sd21_scribble.safetensors
+https://huggingface.co/thibaud/controlnet-sd21/resolve/main/control_v11p_sd21_zoedepth.safetensors
+  out=ControlNet/control_v11p_sd21_zoedepth.safetensors
 https://github.com/Mikubill/sd-webui-controlnet/raw/main/models/cldm_v21.yaml
   out=ControlNet/cldm_v21.yaml
 https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_canny_sd14v1.pth
