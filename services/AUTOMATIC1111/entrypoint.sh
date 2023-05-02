@@ -64,8 +64,14 @@ if [ -f "/data/config/auto/startup.sh" ]; then
   popd
 fi
 
+rm -rf ${ROOT}/extensions/stable-diffusion-webui-images-browser
+rm -rf ${ROOT}/extensions/stable-diffusion-webui-Prompt_Generator
+rm -rf ${ROOT}/extensions/stable-diffusion-webui-state
 rm -rf ${ROOT}/extensions/deforum
 rm -rf ${ROOT}/extensions/sd-webui-controlnet
+cp -rf ${ROOT}/repositories/stable-diffusion-webui-images-browser/ ${ROOT}/extensions
+cp -rf ${ROOT}/repositories/stable-diffusion-webui-Prompt_Generator/ ${ROOT}/extensions
+cp -rf ${ROOT}/repositories/stable-diffusion-webui-state/ ${ROOT}/extensions
 cp -rf ${ROOT}/repositories/deforum/ ${ROOT}/extensions
 cp -rf ${ROOT}/repositories/sd-webui-controlnet/ ${ROOT}/extensions
 
