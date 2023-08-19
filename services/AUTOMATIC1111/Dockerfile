@@ -16,11 +16,11 @@ RUN . /clone.sh k-diffusion https://github.com/crowsonkb/k-diffusion.git 5b3af03
 RUN . /clone.sh clip-interrogator https://github.com/pharmapsychotic/clip-interrogator 2486589f24165c8e3b303f84e9dbbea318df83e8
 
 # EXTENSIONS
-RUN . /clone.sh deforum https://github.com/deforum-art/deforum-for-automatic1111-webui 8323596188af58334c112f0c8c72d07615823e60
-RUN . /clone.sh sd-webui-controlnet https://github.com/Mikubill/sd-webui-controlnet 9eeb71a796b06f912e1e66acecf4242d165db67b
-RUN . /clone.sh stable-diffusion-webui-images-browser https://github.com/AlUlkesh/stable-diffusion-webui-images-browser a396a9f90c6cd2fbd16fd2dc5aef3d210491bbc6
-RUN . /clone.sh stable-diffusion-webui-Prompt_Generator https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator d0ce3a73b608055977f4661fd10f2ec173fe28b4
-RUN . /clone.sh stable-diffusion-webui-state https://github.com/ilian6806/stable-diffusion-webui-state 4cc8fa3ca71bad86db8dfb59f364ff164922706b
+RUN . /clone.sh deforum https://github.com/deforum-art/deforum-for-automatic1111-webui 873401819eacd464f64b6c055cca3a3b3cf09086
+RUN . /clone.sh sd-webui-controlnet https://github.com/Mikubill/sd-webui-controlnet cdba83b6e1a59f3b59bbcf5f0a6e0a585d666a01
+RUN . /clone.sh stable-diffusion-webui-images-browser https://github.com/AlUlkesh/stable-diffusion-webui-images-browser c61fae964ac94bc369fd0e346805e3e2885c69b4
+RUN . /clone.sh stable-diffusion-webui-Prompt_Generator https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator 31ec08338b2224432304fb90c459efc9b43a52b3
+RUN . /clone.sh stable-diffusion-webui-state https://github.com/ilian6806/stable-diffusion-webui-state 8560a9c9ebd3eefc63008f173db69b3168df3a2e
 
 
 FROM alpine:3.17 as xformers
@@ -28,7 +28,7 @@ RUN apk add --no-cache aria2
 RUN aria2c -x 5 --dir / --out wheel.whl 'https://github.com/AbdBarho/stable-diffusion-webui-docker/releases/download/5.0.3/xformers-0.0.20.dev528-cp310-cp310-manylinux2014_x86_64-pytorch2.whl'
 
 
-FROM python:3.10.9-slim
+FROM python:3.10.9
 
 ENV DEBIAN_FRONTEND=noninteractive PIP_PREFER_BINARY=1
 

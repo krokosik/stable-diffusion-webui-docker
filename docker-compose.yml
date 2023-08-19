@@ -39,14 +39,6 @@ services:
     environment:
       - CLI_ARGS=--no-half --precision full --allow-code --enable-insecure-extension-access --api
 
-  deflicker: &automatic
-    <<: *base_service
-    profiles: ["deflicker"]
-    build: ./services/deflicker
-    image: deflicker:1
-    environment:
-      - CLI_ARGS=
-
   invoke: &invoke
     <<: *base_service
     profiles: ["invoke"]
